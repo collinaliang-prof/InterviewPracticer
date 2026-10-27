@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#0f1115" />
+    <meta name="description" content="Private, in-browser interview practice. Questions and recordings stay on this device." />
+    <title>Interview Practice</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <a class="skip-link" href="#app">Skip to content</a>
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Interview Practice</span>
+      </div>
+      <nav aria-label="Main">
+        <ul class="tabs" role="list">
+          <li><button type="button" class="tab" data-view="questions">Questions</button></li>
+          <li><button type="button" class="tab" data-view="practice">Practice</button></li>
+          <li><button type="button" class="tab" data-view="history">History</button></li>
+          <li><button type="button" class="tab" data-view="settings">Settings</button></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="app" tabindex="-1"></main>
+    <div id="status" class="sr-only" role="status" aria-live="polite"></div>
+    <div id="alert" class="sr-only" role="alert"></div>
+    <footer class="foot">Everything stays in this browser. No account, no uploads.</footer>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
